@@ -1,0 +1,50 @@
+<!-- Eugene Hayes, 09/15/2024 -->
+<!-- DOCTYPE this tell the browser that this is an HTML5 page-->
+<!DOCTYPE html>
+<!-- HTML tag goes next -->
+<html>
+    <!-- the head section has info for the browser and search engine -->
+    <head>
+        <title>
+            CSC102 Home Page
+        </title>
+        <!-- Add link to CSS file -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+      body {
+        position: relative;
+      }
+      #memeImage {
+        display: block;
+        position: absolute;
+        width: 200px;
+        height: auto;
+        text-align: center;
+      }
+  
+      body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+    </style>
+    <!-- The Body Section hold the text and images that we want to show to user -->
+    <body>
+      <h1>Welcome to Eugene Hayes CSC102 Home Page</h1>
+      <p>
+        <img id="memeImage" src="meme.jpg">
+      </p>
+      
+
+      <div id="buttons">
+      <p>
+        <button id="startButton" onclick="startMoving()">Start Button</button>
+
+      <button id="stopButton" onclick="stopMoving()">Stop Button</button>
+      </p>
+      </div>
+      <script src="movement.js"></script>
+    </body>
+</html>
